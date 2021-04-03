@@ -1,0 +1,362 @@
+name: covid19_trakcing
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^8.9.0
+  provider: ^4.3.2+2
+  intl: ^0.16.1
+  http: ^0.12.2
+  get: ^3.26.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/country_flags/Orkney-Islands.png
+    - assets/images/country_flags/Sint-Eustatius.png
+    - assets/images/country_flags/United-Nations.png
+    - assets/images/country_flags/Western-Sahara.png
+    - assets/images/country_flags/Channel-Islands.png
+    - assets/images/country_flags/Marshall-Island.png
+    - assets/images/country_flags/North Macedonia.png
+    - assets/images/country_flags/North-Macedonia.png
+    - assets/images/country_flags/Solomon-Islands.png
+    - assets/images/country_flags/Balearic-islands.png
+    - assets/images/country_flags/British-Columbia.png
+    - assets/images/country_flags/Christmas-Island.png
+    - assets/images/country_flags/Falkland-Islands.png
+    - assets/images/country_flags/French-Polynesia.png
+    - assets/images/country_flags/Papua-New-Guinea.png
+    - assets/images/country_flags/Pitcairn-Islands.png
+    - assets/images/country_flags/Turks-and-Caicos.png
+    - assets/images/country_flags/Equatorial-Guinea.png
+    - assets/images/country_flags/Galapagos-Islands.png
+    - assets/images/country_flags/US-Virgin-Islands.png
+    - assets/images/country_flags/Dominican-Republic.png
+    - assets/images/country_flags/Antigua-and-Barbuda.png
+    - assets/images/country_flags/Trinidad-and-Tobago.png
+    - assets/images/country_flags/Caribbean-Netherlands.png
+    - assets/images/country_flags/Republic-Of-Macedonia.png
+    - assets/images/country_flags/Republic-Of-The-Congo.png
+    - assets/images/country_flags/Saint-Kitts-and-Nevis.png
+    - assets/images/country_flags/Saint-Pierre-Miquelon.png
+    - assets/images/country_flags/Sao-Tome-and-Principe.png
+    - assets/images/country_flags/St-Vincent-Grenadines.png
+    - assets/images/country_flags/Bosnia-and-Herzegovina.png
+    - assets/images/country_flags/British-Virgin-Islands.png
+    - assets/images/country_flags/Northern-Marianas-Islands.png
+    - assets/images/country_flags/British-Indian-Ocean-Territory.png
+    - assets/images/country_flags/UK.png
+    - assets/images/country_flags/CAR.png
+    - assets/images/country_flags/DRC.png
+    - assets/images/country_flags/UAE.png
+    - assets/images/country_flags/USA.png
+    - assets/images/country_flags/Asia.png
+    - assets/images/country_flags/Chad.png
+    - assets/images/country_flags/Cuba.png
+    - assets/images/country_flags/Fiji.png
+    - assets/images/country_flags/Guam.png
+    - assets/images/country_flags/Iran.png
+    - assets/images/country_flags/Iraq.png
+    - assets/images/country_flags/Laos.png
+    - assets/images/country_flags/Mali.png
+    - assets/images/country_flags/Nato.png
+    - assets/images/country_flags/Niue.png
+    - assets/images/country_flags/Oman.png
+    - assets/images/country_flags/Peru.png
+    - assets/images/country_flags/Togo.png
+    - assets/images/country_flags/Aruba.png
+    - assets/images/country_flags/Benin.png
+    - assets/images/country_flags/Ceuta.png
+    - assets/images/country_flags/Chile.png
+    - assets/images/country_flags/China.png
+    - assets/images/country_flags/Congo.png
+    - assets/images/country_flags/Egypt.png
+    - assets/images/country_flags/Gabon.png
+    - assets/images/country_flags/Ghana.png
+    - assets/images/country_flags/Haiti.png
+    - assets/images/country_flags/India.png
+    - assets/images/country_flags/Italy.png
+    - assets/images/country_flags/Japan.png
+    - assets/images/country_flags/Kenya.png
+    - assets/images/country_flags/Libya.png
+    - assets/images/country_flags/Macao.png
+    - assets/images/country_flags/Malta.png
+    - assets/images/country_flags/Nauru.png
+    - assets/images/country_flags/Nepal.png
+    - assets/images/country_flags/Niger.png
+    - assets/images/country_flags/Palau.png
+    - assets/images/country_flags/Qatar.png
+    - assets/images/country_flags/Samoa.png
+    - assets/images/country_flags/Spain.png
+    - assets/images/country_flags/Sudan.png
+    - assets/images/country_flags/Syria.png
+    - assets/images/country_flags/Tibet.png
+    - assets/images/country_flags/Tonga.png
+    - assets/images/country_flags/Wales.png
+    - assets/images/country_flags/Yemen.png
+    - assets/images/country_flags/Africa.png
+    - assets/images/country_flags/Angola.png
+    - assets/images/country_flags/Belize.png
+    - assets/images/country_flags/Bhutan.png
+    - assets/images/country_flags/Brazil.png
+    - assets/images/country_flags/Brunei.png
+    - assets/images/country_flags/Canada.png
+    - assets/images/country_flags/Cyprus.png
+    - assets/images/country_flags/Europe.png
+    - assets/images/country_flags/France.png
+    - assets/images/country_flags/Gambia.png
+    - assets/images/country_flags/Greece.png
+    - assets/images/country_flags/Guinea.png
+    - assets/images/country_flags/Guyana.png
+    - assets/images/country_flags/Hawaii.png
+    - assets/images/country_flags/Israel.png
+    - assets/images/country_flags/Jersey.png
+    - assets/images/country_flags/Jordan.png
+    - assets/images/country_flags/Kosovo.png
+    - assets/images/country_flags/Kuwait.png
+    - assets/images/country_flags/Latvia.png
+    - assets/images/country_flags/Malawi.png
+    - assets/images/country_flags/Mexico.png
+    - assets/images/country_flags/Monaco.png
+    - assets/images/country_flags/Norway.png
+    - assets/images/country_flags/Panama.png
+    - assets/images/country_flags/Poland.png
+    - assets/images/country_flags/Russia.png
+    - assets/images/country_flags/Rwanda.png
+    - assets/images/country_flags/Serbia.png
+    - assets/images/country_flags/Sweden.png
+    - assets/images/country_flags/Taiwan.png
+    - assets/images/country_flags/Turkey.png
+    - assets/images/country_flags/Tuvalu.png
+    - assets/images/country_flags/Uganda.png
+    - assets/images/country_flags/Zambia.png
+    - assets/images/country_flags/Albania.png
+    - assets/images/country_flags/Algeria.png
+    - assets/images/country_flags/Andorra.png
+    - assets/images/country_flags/Armenia.png
+    - assets/images/country_flags/Austria.png
+    - assets/images/country_flags/Bahamas.png
+    - assets/images/country_flags/Bahrain.png
+    - assets/images/country_flags/Belarus.png
+    - assets/images/country_flags/Belgium.png
+    - assets/images/country_flags/Bermuda.png
+    - assets/images/country_flags/Bolivia.png
+    - assets/images/country_flags/Bonaire.png
+    - assets/images/country_flags/Burundi.png
+    - assets/images/country_flags/Comoros.png
+    - assets/images/country_flags/Corsica.png
+    - assets/images/country_flags/Croatia.png
+    - assets/images/country_flags/Curacao.png
+    - assets/images/country_flags/Czechia.png
+    - assets/images/country_flags/Denmark.png
+    - assets/images/country_flags/Ecuador.png
+    - assets/images/country_flags/England.png
+    - assets/images/country_flags/Eritrea.png
+    - assets/images/country_flags/Estonia.png
+    - assets/images/country_flags/Finland.png
+    - assets/images/country_flags/Georgia.png
+    - assets/images/country_flags/Germany.png
+    - assets/images/country_flags/Grenada.png
+    - assets/images/country_flags/Hungary.png
+    - assets/images/country_flags/Iceland.png
+    - assets/images/country_flags/Ireland.png
+    - assets/images/country_flags/Jamaica.png
+    - assets/images/country_flags/Lebanon.png
+    - assets/images/country_flags/Lesotho.png
+    - assets/images/country_flags/Liberia.png
+    - assets/images/country_flags/Madeira.png
+    - assets/images/country_flags/Mayotte.png
+    - assets/images/country_flags/Melilla.png
+    - assets/images/country_flags/Moldova.png
+    - assets/images/country_flags/Morocco.png
+    - assets/images/country_flags/Myanmar.png
+    - assets/images/country_flags/Namibia.png
+    - assets/images/country_flags/Nigeria.png
+    - assets/images/country_flags/Oceania.png
+    - assets/images/country_flags/Ossetia.png
+    - assets/images/country_flags/Romania.png
+    - assets/images/country_flags/S-Korea.png
+    - assets/images/country_flags/Senegal.png
+    - assets/images/country_flags/Somalia.png
+    - assets/images/country_flags/Tokelau.png
+    - assets/images/country_flags/Tunisia.png
+    - assets/images/country_flags/Ukraine.png
+    - assets/images/country_flags/Uruguay.png
+    - assets/images/country_flags/Vanuatu.png
+    - assets/images/country_flags/Vietnam.png
+    - assets/images/country_flags/Abkhazia.png
+    - assets/images/country_flags/Anguilla.png
+    - assets/images/country_flags/Barbados.png
+    - assets/images/country_flags/Bhutan-1.png
+    - assets/images/country_flags/Botswana.png
+    - assets/images/country_flags/Bulgaria.png
+    - assets/images/country_flags/Cambodia.png
+    - assets/images/country_flags/Cameroon.png
+    - assets/images/country_flags/Colombia.png
+    - assets/images/country_flags/Djibouti.png
+    - assets/images/country_flags/Dominica.png
+    - assets/images/country_flags/Eswatini.png
+    - assets/images/country_flags/Ethiopia.png
+    - assets/images/country_flags/Guernsey.png
+    - assets/images/country_flags/Honduras.png
+    - assets/images/country_flags/Kiribati.png
+    - assets/images/country_flags/Malaysia.png
+    - assets/images/country_flags/Maldives.png
+    - assets/images/country_flags/Mongolia.png
+    - assets/images/country_flags/Pakistan.png
+    - assets/images/country_flags/Paraguay.png
+    - assets/images/country_flags/Portugal.png
+    - assets/images/country_flags/Rapa-Nui.png
+    - assets/images/country_flags/Sardinia.png
+    - assets/images/country_flags/Scotland.png
+    - assets/images/country_flags/Slovakia.png
+    - assets/images/country_flags/Slovenia.png
+    - assets/images/country_flags/St-Barth.png
+    - assets/images/country_flags/Suriname.png
+    - assets/images/country_flags/Tanzania.png
+    - assets/images/country_flags/Thailand.png
+    - assets/images/country_flags/Zimbabwe.png
+    - assets/images/country_flags/Argentina.png
+    - assets/images/country_flags/Australia.png
+    - assets/images/country_flags/Gibraltar.png
+    - assets/images/country_flags/Greenland.png
+    - assets/images/country_flags/Guatemala.png
+    - assets/images/country_flags/Hong-Kong.png
+    - assets/images/country_flags/Indonesia.png
+    - assets/images/country_flags/Lithuania.png
+    - assets/images/country_flags/Mauritius.png
+    - assets/images/country_flags/Nicaragua.png
+    - assets/images/country_flags/Palestine.png
+    - assets/images/country_flags/Singapore.png
+    - assets/images/country_flags/Sri-Lanka.png
+    - assets/images/country_flags/Swaziland.png
+    - assets/images/country_flags/Venezuela.png
+    - assets/images/country_flags/Azerbaijan.png
+    - assets/images/country_flags/Bangladesh.png
+    - assets/images/country_flags/Cabo-Verde.png
+    - assets/images/country_flags/Costa-Rica.png
+    - assets/images/country_flags/East-Timor.png
+    - assets/images/country_flags/Guadeloupe.png
+    - assets/images/country_flags/Kazakhstan.png
+    - assets/images/country_flags/Kyrgyzstan.png
+    - assets/images/country_flags/Luxembourg.png
+    - assets/images/country_flags/Madagascar.png
+    - assets/images/country_flags/Martinique.png
+    - assets/images/country_flags/Mauritania.png
+    - assets/images/country_flags/Micronesia.png
+    - assets/images/country_flags/Montenegro.png
+    - assets/images/country_flags/Montserrat.png
+    - assets/images/country_flags/Mozambique.png
+    - assets/images/country_flags/San-Marino.png
+    - assets/images/country_flags/Seychelles.png
+    - assets/images/country_flags/Somaliland.png
+    - assets/images/country_flags/Tajikistan.png
+    - assets/images/country_flags/Uzbekistan.png
+    - assets/images/country_flags/Afghanistan.png
+    - assets/images/country_flags/El-Salvador.png
+    - assets/images/country_flags/Isle-of-Man.png
+    - assets/images/country_flags/Ivory-Coast.png
+    - assets/images/country_flags/Netherlands.png
+    - assets/images/country_flags/New-Zealand.png
+    - assets/images/country_flags/North-Korea.png
+    - assets/images/country_flags/Philippines.png
+    - assets/images/country_flags/Puerto-Rico.png
+    - assets/images/country_flags/Saba-Island.png
+    - assets/images/country_flags/Saint-Lucia.png
+    - assets/images/country_flags/South-Sudan.png
+    - assets/images/country_flags/Switzerland.png
+    - assets/images/country_flags/Timor-Leste.png
+    - assets/images/country_flags/Burkina-Faso.png
+    - assets/images/country_flags/Cocos-Island.png
+    - assets/images/country_flags/Cook-Islands.png
+    - assets/images/country_flags/Saint-Martin.png
+    - assets/images/country_flags/Saudi-Arabia.png
+    - assets/images/country_flags/Sierra-Leone.png
+    - assets/images/country_flags/Sint-Maarten.png
+    - assets/images/country_flags/South-Africa.png
+    - assets/images/country_flags/Transnistria.png
+    - assets/images/country_flags/Turkmenistan.png
+    - assets/images/country_flags/Vatican-City.png
+    - assets/images/country_flags/Aland-Islands.png
+    - assets/images/country_flags/French-Guiana.png
+    - assets/images/country_flags/Guinea-Bissau.png
+    - assets/images/country_flags/Liechtenstein.png
+    - assets/images/country_flags/New-Caledonia.png
+    - assets/images/country_flags/North-America.png
+    - assets/images/country_flags/South-America.png
+    - assets/images/country_flags/American-Samoa.png
+    - assets/images/country_flags/Azores-Islands.png
+    - assets/images/country_flags/Basque-Country.png
+    - assets/images/country_flags/Canary-Islands.png
+    - assets/images/country_flags/Cayman-Islands.png
+    - assets/images/country_flags/Czech-Republic.png
+    - assets/images/country_flags/Faeroe-Islands.png
+    - assets/images/country_flags/Norfolk-Island.png
+    - assets/images/country_flags/Northen-Cyprus.png
+    - assets/images/icons/new.png
+    - assets/images/icons/death.png
+    - assets/images/icons/total.png
+    - assets/images/icons/active.png
+    - assets/images/icons/critical.png
+    - assets/images/icons/recovered.png
+    - assets/images/logo/logo.png
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: ABeeZee
+      fonts:
+        - asset: assets/fonts/ABeeZee/ABeeZee-Regular.ttf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
